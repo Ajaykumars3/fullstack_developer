@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url(./img1.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1">
+        <h1>ajay</h1>
+    </div>
+
+
+
+    <!-- different images for diff screen size -->
+    <picture>
+        <source media="(min-width: 650px)" srcset="./img1.jpg">
+        <source media="(min-width: 450px)" srcset="./img2.jpg">
+        <img src="./img3.jpg" style="width:auto">
+    </picture>
+</body>
+</html>
