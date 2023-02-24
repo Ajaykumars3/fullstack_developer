@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        *{
+            margin: 0px;
+
+        }
+        .con-1{
+            background-color: black;
+            display: inline-grid;
+        }
+        .it1{
+            padding: 20px;
+            background-color: white;
+            color: black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con-1">
+        <div class="it1">1</div>
+        <div class="it1">2</div>
+        <div class="it1">3</div>
+    </div> -->
+    <style>
+        *{
+            margin: 0px;
+
+        }
+        .con-1{
+            border: 5px solid red;
+            background-color: black;
+            display: inline-grid;
+            /* grid-template-rows: 50px 150px;
+            grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-rows: minmax(100px auto);
+            grid-template-columns: 1fr 1fr ;
+        } 
+        .it1{
+            padding: 20px;
+            background-color: white;
+            color: black;
+            margin: 10px;
+        }
+        .con2{
+            background-color: rgb(0, 255, 200);
+            margin: 10px;
+            border: 10px solid red;
+            display: grid;
+            /* grid-template-rows: 50px 100px 60px;
+            grid-template-columns: 1fr 1fr 1fr 3fr; */
+            grid-template-rows: minmax(100px, auto) 80px;
+            grid-template-columns: minmax(auto, 30%) 1fr 1fr 1fr;
+        }
+        .it2{
+            background-color: white;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            /* display: inline-grid; */
+        }
+        .con3{
+            background-color: blueviolet;
+            padding: 8px;
+            display: grid;
+            /* grid-template-rows: repeat(4, 50px);
+            grid-template-columns: repeat(8, 1fr); */
+            grid-template-columns: 80px repeat(4, 1fr);
+            /* grid-row-gap: 20px;
+            grid-column-gap: 50px; */
+            grid-gap: 20px 50px;
+        }
+        .it3{
+            background-color: white;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con-1">
+        <div class="it1">1</div>
+        <div class="it1">2</div>
+        <div class="it1">3</div>
+        <div class="it1">3 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, harum? Asperiores quae incidunt, atque, deserunt quaerat porro nemo eius deleniti in architecto nesciunt alias, excepturi quos adipisci at nulla quisquam. ipsum dolor sit, amet consectetur adipisicing elit. Iure at sequi temporibus consectetur ipsa aperiam quod expedita? Mollitia reiciendis temporibus facere ratione iure dolor obcaecati id, aspernatur, dolorum vero eius?</div>
+        <div class="it1">3</div>
+        <div class="it1">3</div>
+    </div>
+
+    <div class="con2">
+        <div class="it2">1</div>
+        <div class="it2">1</div>
+        <div class="it2">1</div>
+        <div class="it2">1</div>
+        <div class="it2">1</div>
+        <div class="it2">1</div>
+        <div class="it2">1</div>
+        <div class="it2">1</div>
+        <div class="it2">1</div>
+    </div>
+    <div class="con3">
+        <div class="it3">1</div>
+        <div class="it3">1</div>
+        <div class="it3">1</div>
+        <div class="it3">1</div>
+        <div class="it3">1</div>
+        <div class="it3">1</div>
+        <div class="it3">1</div>
+        <div class="it3">1</div>
+        <div class="it3">1</div>
+    </div>
+</body>
+</html>
